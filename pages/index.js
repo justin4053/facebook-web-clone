@@ -5,11 +5,11 @@ import Login from "../components/Login"
 import Sidebar from "../components/Sidebar"
 import Feed from "../components/Feed"
 import Widgets from "../components/Widgets"
-import { collection, getDoc, getDocs, orderBy, query } from "firebase/firestore"
+import { collection, getDocs, orderBy, query } from "firebase/firestore"
 import { db } from "../firebase"
 
 export default function Home({ session, posts }) {
-  if (!session) return <Login />
+  // if (!session) return <Login />
   return (
     <div className="h-screen bg-gray-100 overflow-hidden">
       <Head>
